@@ -1,0 +1,106 @@
+<div class="container">
+    <div class="row ancho-row">
+        <div class="col center-form">
+
+            <mat-card class="card">
+                <!-- Inicio del formulario ABC -->
+                <form class="form-style">
+                    <div class="line-first">
+                        <mat-form-field class="sku-mat" appearance="outline">
+                            <mat-label>Sku: </mat-label>
+                            <input type="number" matInput placeholder="Ingresa el Sku">
+                        </mat-form-field>
+                        <button mat-flat-button class="buscar" color="primary">Buscar</button>
+                        <mat-checkbox class="check-desconocido">Descontinuado</mat-checkbox>
+                    </div>
+                    
+                    <div class="line-second">
+                        <mat-form-field class="articulo-mat" appearance="outline">
+                            <mat-label>Articulo: </mat-label>
+                            <input type="text" matInput placeholder="Ingresa el Articulo">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="line-third">
+                        <mat-form-field class="articulo-mat" appearance="outline">
+                            <mat-label>Marca: </mat-label>
+                            <input type="text" matInput placeholder="Ingresa la marca">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="line-four">
+                        <mat-form-field class="articulo-mat" appearance="outline">
+                            <mat-label>Modelo: </mat-label>
+                            <input type="text" matInput placeholder="Ingresa el modelo">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="line-five">
+                        <mat-form-field class="articulo-mat">
+                            <mat-label>Departamento: </mat-label>
+                            <mat-select>
+                              <mat-option value="option">Option</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="line-six">
+                        <mat-form-field class="articulo-mat">
+                            <mat-label>Clase: </mat-label>
+                            <mat-select>
+                              <mat-option value="option">Option</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="line-seven">
+                        <mat-form-field class="articulo-mat">
+                            <mat-label>Familia: </mat-label>
+                            <mat-select>
+                              <mat-option value="option">Option</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="line-eight">
+                        <mat-form-field class="mat-stock" hintLabel="">
+                            <mat-label>Stock: </mat-label>
+                            <input type="number" matInput maxlength="" placeholder="Ingresa el stock" />
+                        </mat-form-field>
+
+                        <mat-form-field class="mat-cantidad" hintLabel="">
+                            <mat-label>Cantidad: </mat-label>
+                            <input type="number" matInput maxlength="" placeholder="Ingresa la cantidad" />
+                        </mat-form-field>
+                    </div>
+
+                    <div class="line-nine">
+                        <mat-form-field class="mat-stock">
+                            <mat-label>Fecha Alta: </mat-label>
+                            <input matInput [matDatepicker]="picker">
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+
+                        <mat-form-field class="mat-cantidad">
+                            <mat-label>Fecha Baja: </mat-label>
+                            <input matInput [matDatepicker]="picker2">
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+                            <mat-datepicker #picker2></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="line-ten">
+                        <button class="button-only" mat-stroked-button>Limpiar</button>
+                        <button class="button-only" mat-flat-button color="warn">Eliminar</button>
+                        <button class="button-only" mat-flat-button color="accent">Actualizar</button>
+                        <button class="button-only" mat-flat-button color="primary">Guardar</button>
+                    </div>
+                </form>
+            </mat-card>
+
+        </div>
+    </div>
+</div>

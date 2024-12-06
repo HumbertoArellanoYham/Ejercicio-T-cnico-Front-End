@@ -1,0 +1,49 @@
+.center-form {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.form-style {
+    padding: 15px;
+}
+
+.card {
+    width: 60%;
+}
+
+.sku-mat {
+    width: 300px;
+}
+
+.buscar {
+    margin-left: 5px;
+}
+
+.check-desconocido{
+    margin-left: 15%;
+}
+
+.articulo-mat {
+    width: 100%;
+}
+
+.mat-stock {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.mat-cantidad {
+    width: 45%;
+    margin-left: 5%;
+}
+
+.line-ten {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.button-only {
+    margin: 0px 5%;
+}
