@@ -26,10 +26,6 @@ export class ArticulosService {
   }
 
   removePorSku(sku: number): Observable<boolean> {
-    return this.httpClient.delete(`${this.urlBaseArticle}/removePorSku/${sku}`)
-              .pipe(
-                catchError(error => of(false)),
-                map(resp => true)
-              );
+    return this.httpClient.delete<boolean>(`${this.urlBaseArticle}/removePorSku/${sku}`);
   }
 }

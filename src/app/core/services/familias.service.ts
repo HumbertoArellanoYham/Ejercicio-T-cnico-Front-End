@@ -15,14 +15,14 @@ export class FamiliasService {
   // Peticiones al servidor ABCC
   
   obtenerTodasLasFamilia(): Observable<Familia[]>{
-    this.httpClient.get<Familia[]>(`${this.urlBaseFamilia}/familia-todas`);
+    return this.httpClient.get<Familia[]>(`${this.urlBaseFamilia}/familia-todas`);
   }
 
   buscarPorNum(num: number): Observable<Familia> {
-    this.httpClient.get<Familia>(`${this.urlBaseFamilia}/obtenerPorNum/${num}`);
+    return this.httpClient.get<Familia>(`${this.urlBaseFamilia}/obtenerPorNum/${num}`);
   }
 
   buscarPorNombre(nombreFamilia: string): Observable<number> {
-    this.httpClient.get<number>(`${this.urlBaseFamilia}/obtenerPorNombre/${nombreFamilia}`);
+    return this.httpClient.get<number>(`${this.urlBaseFamilia}/obtenerPorNombre/${nombreFamilia}`);
   }
 }

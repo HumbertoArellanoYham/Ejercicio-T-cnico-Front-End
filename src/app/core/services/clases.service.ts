@@ -16,14 +16,14 @@ export class ClasesService {
   // Peticiones al servidor ABCC
   
   obtenerTodasLasClases(): Observable<Clase[]>{
-    this.httpClient.get<Clase[]>(`${this.urlBaseClase}/clase-todas`);
+    return this.httpClient.get<Clase[]>(`${this.urlBaseClase}/clase-todas`);
   }
 
   buscarPorNum(num: number): Observable<Clase> {
-    this.httpClient.get<Clase>(`${this.urlBaseClase}/obtenerPorNum/${num}`);
+    return this.httpClient.get<Clase>(`${this.urlBaseClase}/obtenerPorNum/${num}`);
   }
 
   buscarPorNombre(nombreClase: string): Observable<number> {
-    this.httpClient.get<number>(`${this.urlBaseClase}/obtenerPorNombre/${nombreClase}`);
+    return this.httpClient.get<number>(`${this.urlBaseClase}/obtenerPorNombre/${nombreClase}`);
   }
 }

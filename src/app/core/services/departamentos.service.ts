@@ -14,14 +14,14 @@ export class DepartamentosService {
   // Peticiones al servidor ABCC
   
   obtenerTodosLosDepartamentos(): Observable<Departamento[]>{
-    this.httpClient.get<Departamento[]>(`${this.urlBaseDepartamento}/departamentos-todos`);
+    return this.httpClient.get<Departamento[]>(`${this.urlBaseDepartamento}/departamentos-todos`);
   }
 
   buscarPorNum(num: number): Observable<Departamento> {
-    this.httpClient.get<Departamento>(`${this.urlBaseDepartamento}/obtenerPorNum/${num}`);
+    return this.httpClient.get<Departamento>(`${this.urlBaseDepartamento}/obtenerPorNum/${num}`);
   }
 
   buscarPorNombre(nombreDepartamento: string): Observable<number> {
-    this.httpClient.get<number>(`${this.urlBaseDepartamento}/obtenerPorNombre/${nombreDepartamento}`);
+    return this.httpClient.get<number>(`${this.urlBaseDepartamento}/obtenerPorNombre/${nombreDepartamento}`);
   }
 }
