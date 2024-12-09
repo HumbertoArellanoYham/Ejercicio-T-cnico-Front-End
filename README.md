@@ -1,4 +1,4 @@
-# Desarrollo: Formulario de articulos
+<img width="1277" alt="Screen Shot 2024-12-08 at 21 12 46" src="https://github.com/user-attachments/assets/528c5dc5-13a9-4656-87a6-b6fb34522aa3"># Desarrollo: Formulario de articulos
 
 ## Tecnologías utilizadas
   *  Angular 17
@@ -25,7 +25,15 @@ y sin problemas podra ingresar otro sku.
   * La cantidad no debe ser mayor al stock tanto al actualizar como al guardar
   * Ventana de alerta para preguntar si desea eliminar un articulo
 
-![Screen Shot 2024-12-05 at 22 54 25](https://github.com/user-attachments/assets/dc62cece-8c50-464f-8a73-c7c45967737b)
+
+<img width="1277" alt="Screen Shot 2024-12-08 at 21 12 08" src="https://github.com/user-attachments/assets/bc35614f-c760-4e08-a653-a33555528e17">
+
+
+<img width="1277" alt="Screen Shot 2024-12-08 at 21 12 35" src="https://github.com/user-attachments/assets/425080c2-00e8-467f-b7b9-0ab1b885b867">
+
+
+<img width="1277" alt="Screen Shot 2024-12-08 at 21 12 46" src="https://github.com/user-attachments/assets/ba2a4a7c-6c1d-435b-bbf8-587ae76cd10d">
+
 
 ## Funcionalidades a tomar en cuenta en un futuro
 ## Despliegue en AWS
