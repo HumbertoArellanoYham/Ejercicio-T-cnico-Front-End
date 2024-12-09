@@ -25,6 +25,10 @@
                             <mat-label>Articulo: </mat-label>
                             <input type="text" #articulo maxlength="15" matInput placeholder="Ingresa el Articulo" 
                             formControlName="articulo">
+
+                            @if(formArticulos.controls.articulo.hasError('required')){
+                                <mat-error>Ingresa un articulo correcto</mat-error>
+                            }
                         </mat-form-field>
                     </div>
 
@@ -33,6 +37,10 @@
                             <mat-label>Marca: </mat-label>
                             <input type="text" #marca maxlength="15" matInput placeholder="Ingresa la marca" 
                             formControlName="marca">
+
+                            @if(formArticulos.controls.marca.hasError('required')){
+                                <mat-error>Ingresa una marca</mat-error>
+                            }
                         </mat-form-field>
                     </div>
 
@@ -41,6 +49,10 @@
                             <mat-label>Modelo: </mat-label>
                             <input type="text" #modelo maxlength="20" matInput placeholder="Ingresa el modelo" 
                             formControlName="modelo">
+
+                            @if(formArticulos.controls.modelo.hasError('required')){
+                                <mat-error>Ingresa modelo correctamente </mat-error>
+                            }
                         </mat-form-field>
                     </div>
 
@@ -108,9 +120,10 @@
 
                 </form>
                     <div class="line-ten">
-                        <button class="button-only" mat-flat-button [disabled]="eliminarBotonDesahabilitado" color="warn">Eliminar</button>
-                        <button class="button-only" mat-flat-button [disabled]="actualizarBotonDesahabilitado" color="accent">Actualizar</button>
-                        <button class="button-only" mat-flat-button [disabled]="guardarBotonDesahabilitado" color="primary">Guardar</button>
+                        <button class="button-only" mat-flat-button [disabled]="otroArticulo" (click)="otroArticuloBuscar()">Otro Articulo</button>
+                        <button class="button-only" mat-flat-button [disabled]="eliminarBotonDesahabilitado" (click)="eliminarArticulo()" color="warn">Eliminar</button>
+                        <button class="button-only" mat-flat-button [disabled]="actualizarBotonDesahabilitado" (click)="actualizarArticulo()" color="accent">Actualizar</button>
+                        <button class="button-only" mat-flat-button [disabled]="guardarBotonDesahabilitado" (click)="guardarArticulo()" color="primary">Guardar</button>
                     </div>
             </mat-card>
 

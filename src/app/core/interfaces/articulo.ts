@@ -4,11 +4,11 @@ export interface Articulo {
     marca: string;
     modelo: string;
     departamento: number;
-    clase: string;
-    familia: string;
+    clase: number;
+    familia: number;
     fechaAlta: Date;
     stock: number;
     cantidad: number;
     descontinuado: number;
-    FechaBaja: Date
+    fechaBaja: Date
 }
