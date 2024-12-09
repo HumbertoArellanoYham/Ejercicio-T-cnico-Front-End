@@ -49,6 +49,7 @@ Importante a tomar en cuenta:
    Se podria pensar que es mas costoso en complejidad temporal pero no es asi porque tenemos un 
    conjunto de datos finito y cada bucle se realiza de manera independiente por lo que como 
    complejidad temporal y espacial quedaria asi:
+   
      * Temporal: O(n) -> pero como es finito se reduce bastante 
      * Espacial: O(1) -> no se nesesito estructuras de datos adicional
 
