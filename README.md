@@ -1,4 +1,4 @@
-<img width="1277" alt="Screen Shot 2024-12-08 at 21 12 46" src="https://github.com/user-attachments/assets/528c5dc5-13a9-4656-87a6-b6fb34522aa3"># Desarrollo: Formulario de articulos
+# Desarrollo: Formulario de articulos
 
 ## Tecnologías utilizadas
   *  Angular 17
