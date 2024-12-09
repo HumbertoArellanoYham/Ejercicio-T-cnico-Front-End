@@ -36,5 +36,13 @@ y sin problemas podra ingresar otro sku.
 
 * Sin embargo se tiene que tomar en cuenta el costo asociado
 
+## Diagrama
+
+![Screen Shot 2024-12-08 at 20 10 01](https://github.com/user-attachments/assets/5b14cb35-17f5-4fa1-9cb3-29a313889ddd)
+
+
+
+
+
 
 
